@@ -1,0 +1,119 @@
+.wrapImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.logo {
+    width: 350px;
+    max-width: 90%;
+}
+.wrapInputs {
+    width: 280px;
+    margin: 40px auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,.4);
+}
+.wrapInputs label {
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 15px;
+}
+.wrapInputs input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #2d2d2d;
+    color: white;
+    outline: none;
+    transition: .3s;
+}
+.wrapInputs input:focus {
+    box-shadow: 0 0 8px #ff9800;
+}
+.wrapInputs input::placeholder {
+    color: #bdbdbd;
+}
+.wrapInputs button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ff9800;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+.wrapInputs button:hover {
+    background: #ffb300;
+    transform: scale(1.03);
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px;
+}
+.card {
+    width: 500px;
+    min-height: 260px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    transition: .3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(255,152,0,.4);
+}
+.card img {
+    width: 170px;
+    height: 220px;
+    object-fit: contain;
+}
+
+.card div {
+    flex: 1;
+}
+.card h2 {
+    color: #ff9800;
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+.card p {
+    margin: 6px 0;
+    color: #f1f1f1;
+    font-size: 16px;
+    line-height: 1.4;
+}
+@media (max-width: 1100px) {
+    .card {
+        width: 90%;
+    }
+}
+@media (max-width: 650px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    .card img {
+        width: 300px;
+        height: 100%;
+    }
+}
